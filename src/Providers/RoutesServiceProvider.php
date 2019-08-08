@@ -6,7 +6,7 @@
  * Time: 09:48
  */
 
-namespace Cube\Ccp\Providers;
+namespace Leslie\elasticsearch\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

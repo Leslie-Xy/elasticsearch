@@ -5,7 +5,7 @@
  * Date: 2019/7/17
  * Time: 14:59
  */
-namespace Cube\Ccp\Controllers;
+namespace Leslie\elasticsearch\Controllers;
 
 use Cube\Ccp\Services\ccpService;
 use Qiniu\Auth;

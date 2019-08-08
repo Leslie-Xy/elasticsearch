@@ -1,6 +1,6 @@
 {
-  "name": "cube/saas-ccp",
-  "description": "魔方数ccp 据看板 saas",
+  "name": "Leslie-Xy/elasticsearch",
+  "description": "elasticsearc模型包",
   "license": "MIT",
   "authors": [
     {
@@ -30,11 +30,11 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Cube\\Ccp\\Providers\\ConfigServiceProvider",
-        "Cube\\Ccp\\Providers\\CommandsServiceProvider",
-        "Cube\\Ccp\\Providers\\MigrationsServiceProvider",
-        "Cube\\Ccp\\Providers\\RoutesServiceProvider",
-        "Cube\\Ccp\\Providers\\MiddlewareServiceProvider"
+        "Leslie\\elasticsearch\\Providers\\ConfigServiceProvider",
+        "Leslie\\elasticsearch\\Providers\\CommandsServiceProvider",
+        "Leslie\\elasticsearch\\Providers\\MigrationsServiceProvider",
+        "Leslie\\elasticsearch\\Providers\\RoutesServiceProvider",
+        "Leslie\\elasticsearch\\Providers\\MiddlewareServiceProvider"
       ]
     }
   }
