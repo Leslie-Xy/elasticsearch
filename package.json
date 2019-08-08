@@ -1,0 +1,25 @@
+{
+  "apidoc": {
+    "version": "0.1.0",
+    "description": "魔方产品化-saas 版本 CCP 数据看板",
+    "title": "账号组件接口文档",
+    "url": "",
+    "header": {
+      "title": "安装使用说明",
+      "filename": "README.md"
+    },
+    "footer": {
+      "title": "组件说明",
+      "filename": "apidoc/footer.md"
+    },
+    "auth": {
+      "company": "联想 (北京) 有限公司 ",
+      "rd": [
+        {
+          "name": "贾敬宙",
+          "email": "mailto:jiajz2@lenovo.com"
+        }
+      ]
+    }
+  }
+}

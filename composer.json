@@ -1,0 +1,41 @@
+{
+  "name": "cube/saas-ccp",
+  "description": "魔方数ccp 据看板 saas",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "leslie",
+      "email": "m18201012585@163.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "ext-json": "*",
+    "laravel/framework": "5.5.*",
+    "anlutro/curl": "^1.4"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.4",
+    "friendsofphp/php-cs-fixer": "^2.15"
+  },
+  "autoload": {
+    "psr-4": {
+      "Leslie\\elasticsearch\\": "./src/"
+    },
+    "files": [
+      "helpers/path.php",
+      "helpers/tools.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Cube\\Ccp\\Providers\\ConfigServiceProvider",
+        "Cube\\Ccp\\Providers\\CommandsServiceProvider",
+        "Cube\\Ccp\\Providers\\MigrationsServiceProvider",
+        "Cube\\Ccp\\Providers\\RoutesServiceProvider",
+        "Cube\\Ccp\\Providers\\MiddlewareServiceProvider"
+      ]
+    }
+  }
+}
