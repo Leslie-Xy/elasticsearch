@@ -1,6 +1,7 @@
 {
   "name": "leslie-xy/elasticsearch",
   "description": "elasticsearc模型包",
+  "keywords": ["elasticsearch", "leslie", "model"],
   "license": "MIT",
   "authors": [
     {
