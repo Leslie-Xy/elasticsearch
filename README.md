@@ -1,6 +1,6 @@
 ## Another example
 ```php
-use Cube\Ccp\Repository\ElasticSearch\ElasticSearchModel;
+use Leslie\elasticsearch\Repository\ElasticSearch\ElasticSearchModel;
 
 $this->model = with(new ElasticSearchModel($this->index, $this->type));
 
@@ -29,3 +29,15 @@ $this->model->group['aggs'] = ['esim_ids' => ['terms' => ['field' => 'esim_id', 
 $obuVideo['list'] = $this->model->paginate($page);
 $obuVideo['page_count'] = $this->model->page_count;
 $obuVideo['page'] = $page;
+
+## create()
+>插入数据
+$this->model->create($insertData, 'id');
+
+## saveModel()
+>修改数据
+$this->model->saveModel($updateData, 'id');
+
+## delete()
+>删除数据
+$this->model->delete($deleteId);
