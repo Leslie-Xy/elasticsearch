@@ -12,6 +12,10 @@ class ElasticSearchModel extends Repository
 
     public $url;
 
+    public $type;
+
+    public $index;
+
     public $field = [];
 
     public $orderBy = [];
@@ -30,8 +34,10 @@ class ElasticSearchModel extends Repository
 
     public function __construct($index, $type)
     {
+        $this->type = $type;
+        $this->index = $index;
         $this->esUrl = config('elasticsearch.elasticsearch_host');
-        $this->url = $this->esUrl . $index . '/' . $type;
+        $this->url = $this->esUrl . $this->index . '/' . $this->type;
         $this->model();
     }
 
@@ -96,10 +102,10 @@ class ElasticSearchModel extends Repository
         return $this->get();
     }
 
-    public function createTable($index, $type, $data)
+    public function createTable($data)
     {
-        $this->params = ['mappings' => [$type => ['properties' => $data]]];
-        SendRequest($this->esUrl . $index, 'PUT', $this->params);
+        $this->params = ['mappings' => [$this->type => ['properties' => $data]]];
+        SendRequest($this->esUrl . $this->index, 'PUT', $this->params);
     }
 
     public function merge()
