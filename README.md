@@ -41,3 +41,17 @@ $this->model->saveModel($updateData, 'id');
 ## delete()
 >删除数据
 $this->model->delete($deleteId);
+
+## createTable()
+>创建索引
+$model = with(new ElasticSearchModel('saas', 'knowledge_base'));
+$field = [
+    'id' => ['type' => 'integer'],
+    'title' => ['type' => 'text'],
+    'problem_id' => ['type' => 'integer'],
+    'content' => ['type' => 'text'],
+    'engineer_code' => ['type' => 'text'],
+    'updated_at' => ['type' => 'text'],
+    'created_at' => ['type' => 'text'],
+];
+$model->createTable('saas', 'knowledge_base', $field);
