@@ -1,7 +1,7 @@
 <?php
 use anlutro\cURL\Request;
 if (!function_exists('SendRequest')) {
-    function SendRequest($url, $method = 'GET', $data = [], $headers = ['kbn-xsrf' => 'reporting','Content-Type' => 'application/json'], $options = [], $encoding = Request::ENCODING_JSON)
+    function SendRequest($url, $method = 'GET', $data = [], $headers = ['Content-Type' => 'application/json'], $options = [], $encoding = Request::ENCODING_JSON)
     {
         $baseOptions = [
             CURLOPT_TIMEOUT_MS        => 30000,
