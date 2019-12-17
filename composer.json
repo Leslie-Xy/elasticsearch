@@ -36,7 +36,10 @@
         "Leslie\\elasticsearch\\Providers\\MigrationsServiceProvider",
         "Leslie\\elasticsearch\\Providers\\RoutesServiceProvider",
         "Leslie\\elasticsearch\\Providers\\MiddlewareServiceProvider"
-      ]
+      ],
+      "aliases": {
+        "cURL": "Leslie\\elasticsearch\\Foundation\\Facades\\cURL"
+      }
     }
   }
 }
