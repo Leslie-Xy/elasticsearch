@@ -21,5 +21,8 @@
         }
       ]
     }
+  },
+  "dependencies": {
+    "readme-md": "^0.8.0"
   }
 }
